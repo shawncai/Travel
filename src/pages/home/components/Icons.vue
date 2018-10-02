@@ -1,7 +1,7 @@
 <template>
 	<div class="icons">
 		 <swiper>
-		 	<swiper-slide v-for="(page,index) of pages" :key="page">
+		 	<swiper-slide v-for="(page,index) of pages" :key="index">
 		<div class="icon" v-for="item of page" :key="item.id" >
 			<div class="icon-img">
 			<img class="icon-img-content" :src="item.imgUrl">
@@ -74,9 +74,11 @@
 <style lang="stylus" scoped>
 @import '~styles/varibles.styl'
 @import '~styles/mixins.styl'
-	.icons >>> .swiper-container
+.icons >>> .swiper-container
 		height: 0
 		padding-bottom: 50%
+.icons
+	margin-top: .1rem		
 	.icon
 			position: relative
 			overflow: hidden
