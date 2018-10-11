@@ -30,7 +30,7 @@
 		},
 		methods: {
 			getCityInfo () {
-				axios.get('/api/city.json')
+				axios.get(' https://easy-mock.com/mock/5bbacc16329225414318ba69/vue/api/city')
 					.then(this.handleGetCityInfoSucc)
 			},
 			handleGetCityInfoSucc(res){
